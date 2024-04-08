@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    gap: 20em;
+    padding: 1.5rem;
+}
+
+.header__nav li{
+    list-style: none;
+}
+
+.header__nav ul{
+    display: flex;
+    gap:5em;
+    padding: 0;
+}
+
+.header__nav a{
+    padding: 1.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+.header__nav a:hover{
+    background: violet;
+    color: #fff;
+    transition: 1s;
+}
+
+@media screen and (min-width:48.75em){
+ 
+}
