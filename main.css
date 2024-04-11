@@ -52,6 +52,7 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 gap: 10rem;
+outline: 1px solid green;
 }
 
 
@@ -66,8 +67,9 @@ outline: 1px solid blue;
 .content__image img{
     outline: 1px solid blue ;
     display: flex;
-    /* width: 100%; */
+     width: 300px;
     height: 350px;
+    flex-shrink: 1;
 }
 
 .content h1{
@@ -80,10 +82,36 @@ outline: 1px solid blue;
 }
 
 
+
+@media screen and (max-width:1100px){
+    .row{
+        gap: 5rem;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+  
+
+   
+
+    /* .content__image img{
+        display: none;
+    } */
+
+
+    }
+
 @media screen and (max-width:900px){
     .header{
         gap:5em;
     }
+
+    
+
+
+    
 }
 
 
