@@ -5,37 +5,46 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
 .header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.header__nav{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    border-bottom: 1px solid #4826cf;
-    gap: 20em;
-    padding: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.header__nav .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.header__nav .toggle__btn{
+    color: #0f0d0d;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .header__nav li{
     list-style: none;
 }
 
-.header__nav ul{
-    display: flex;
-    gap:5em;
-    padding: 0;
-    margin-bottom: 0;
-}
-
 .header__nav a{
-    padding: 1.3rem;
     text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 20px;
-}
-
-.header__nav a:hover{
-    background: violet;
-    color: #fff;
-    transition: 1s;
+    color: blue;
+    font-size: 1em;
 }
 
 
@@ -51,7 +60,7 @@
 display: flex;
 justify-content: space-around;
 align-items: center;
-gap: 10rem;
+gap: 9rem;
 outline: 1px solid green;
 }
 
@@ -77,6 +86,10 @@ outline: 1px solid blue;
      margin: 0;
 }
 
+.content h2{
+    color: rgb(27, 224, 224);
+}
+
 .content p{
     text-align: left;
 }
@@ -89,21 +102,20 @@ outline: 1px solid blue;
 
 .icon{
     font-size: 25px;
+    border-radius: 20px;
+   outline: 1px violet;
     
 }
 
 .icon a{
-    color: violet;
+    color:  rgb(27, 224, 224);
     padding: 1rem;
 }
 
-
-.main__cards h1{
-    margin: 0;
+.footer{
+    padding: 1.5rem;
     text-align: center;
-    text-transform: uppercase;
-    font-size: 20px;
-    color: violet;
+    color: #796f6f;
 }
 
 @media screen and (max-width:1100px){
@@ -114,6 +126,8 @@ outline: 1px solid blue;
     .content{
         width: 100%;
     }
+
+
 
   
 
@@ -126,66 +140,14 @@ outline: 1px solid blue;
 
     }
 
-@media screen and (max-width:900px){
-    .header{
-        gap:5em;
-    }
-
     
-
-
-    
-}
-
-
-
-@media screen and (max-width:750px){
-    .header{
+@media screen and (max-width: 992px){
+    .header__nav .links{
         display: none;
     }
 
-    .header__mob{
-        text-align: center;
-    }
-
-    .header__logo_mob{
-        padding: 1rem;
-    }
-
-    .header__nav_mob ul{
-        list-style: none;
-        padding:0;
-        margin-bottom: 0;
-    }
-
-    .header__nav_mob li{
-        padding: 0;
-        border: 1px solid #fff;
-    }
-
-    .header__nav_mob{
-        background-color: blueviolet;
-    }
-
-    .header__nav_mob a{
-        padding: 1em;
-        color: white;
-        text-decoration: none;
+    .header__nav .toggle__btn{
         display: block;
     }
-}
-
-.main__content{
-    outline: 1px solid red;
-}
-
-
-
-
-@media screen and (min-width:750px){
-    .header__mob{
-        display: none;
-    }
-
 }
 
