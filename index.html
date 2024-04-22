@@ -25,6 +25,12 @@
                 <div class="toggle__btn">
                     <i class="fa-solid fa-bars"></i>
                 </div>
+
+                <div class="dropdown__menu open">
+                    <li><a href="#" target="_blank">Home</a></li>
+                    <li><a href="#" target="_blank">Projetos</a></li>
+                    <li><a href="#" target="_blank">Habilidades</a></li>
+                </div>
         </nav>
         </header>
 
@@ -56,6 +62,20 @@
         <p>Desenvolvido por Eduardo</p>
     </footer>
 
-    <script href="scripts.js"></script>
+    <script href="scripts.js">
+        const toggleBtn = document.querySelector('.toggle__btn')
+ const toggleBtnIcon = document.querySelector('.toggle__btn i')
+ const dropDownMenu = document.querySelector('.dropdown__menu')
+
+
+ toggleBtn.onclick = function (){
+    dropDownMenu.classList.toggle('open')
+    const isOpen = dropDownMenu.classList.contains('open')
+
+    toggleBtnIcon.classList = isOpen
+    ? 'fa-solid fa-xmark'
+    : 'fa-solid fa-bars'
+ }
+    </script>
 </body>
 </html>
