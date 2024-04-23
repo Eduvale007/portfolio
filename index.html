@@ -13,26 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-   
-        <header class="header">
-        <nav class="header__nav">
-        <div class="logo">Logo</div>
-                <ul class="links">
-                    <li><a href="#" target="_blank">Home</a></li>
-                    <li><a href="#" target="_blank">Projetos</a></li>
-                    <li><a href="#" target="_blank">Habilidades</a></li>
-                </ul>
-                <div class="toggle__btn">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-
-                <div class="dropdown__menu open">
-                    <li><a href="#" target="_blank">Home</a></li>
-                    <li><a href="#" target="_blank">Projetos</a></li>
-                    <li><a href="#" target="_blank">Habilidades</a></li>
-                </div>
-        </nav>
-        </header>
+    <header class="header"></header>
 
     <main>
         <section class="main__content">
@@ -55,27 +36,65 @@
             </figure>
             </div>
         </section>
+
+        <div><h1 class="cards__title">Minhas habilidades</h1></div>
+
+        <section class="main__cards">
+            <article class="cards">
+                <div class="card">
+                <div class="card__header">
+                <div class="card__icon card__html"><i class="fa-brands fa-html5"></i></div>
+                </div>
+                    <h2 class="card__subtitle">html</h2>
+                </div>
+                <div class="card">
+                <div class="card__header">
+                <div class="card__icon card__css"><i class="fa-brands fa-css3-alt"></i></div>
+                </div>
+                    <h2 class="card__subtitle">css</h2>
+                </div>
+                <div class="card">
+                <div class="card__header">
+                <div class="card__icon card__js"><i class="fa-brands fa-square-js"></i></div>
+                </div>
+                    <h2 class="card__subtitle">javaScript</h2>
+                </div>
+                <div class="card">
+                <div class="card__header">
+                <div class="card__icon card__js"><i class="fa-brands fa-git-alt"></i></div>
+                </div>
+                    <h2 class="card__subtitle">git</h2>
+                </div>
+            </article>
+        </section>
+
+        <section class="main__sk_title">
+            <h1>Meus projetos</h1>
+        </section>
+        <section class="main__sk">
+            <article class="main__pj">
+                <div class="pj"></div>
+            </article>
+            <article class="main__pj">
+                <div class="pj"></div>
+            </article>
+            <article class="main__pj">
+                <div class="pj"></div>
+            </article>
+            <article class="main__pj">
+                <div class="pj"></div>
+            </article>
+        </section>
     </main>
+
+
 
 
     <footer class="footer">
         <p>Desenvolvido por Eduardo</p>
     </footer>
 
-    <script href="scripts.js">
-        const toggleBtn = document.querySelector('.toggle__btn')
- const toggleBtnIcon = document.querySelector('.toggle__btn i')
- const dropDownMenu = document.querySelector('.dropdown__menu')
-
-
- toggleBtn.onclick = function (){
-    dropDownMenu.classList.toggle('open')
-    const isOpen = dropDownMenu.classList.contains('open')
-
-    toggleBtnIcon.classList = isOpen
-    ? 'fa-solid fa-xmark'
-    : 'fa-solid fa-bars'
- }
-    </script>
 </body>
+
+<script href="app.js"></script>
 </html>
