@@ -161,7 +161,7 @@ gap: 9rem;
 
 
 .card__projetos{
-    padding: 20px;
+    padding: 25px;
     display: flex;
    justify-content: space-around;
    gap: 10rem;
@@ -176,9 +176,13 @@ gap: 9rem;
     background-color: rgb(27, 224, 224);
     padding: 10rem;
     border-radius: 20px;
+   
 }
 
 .card__content{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
     width: 500px;
     /*
     outline: 1px solid red;
@@ -190,6 +194,17 @@ gap: 9rem;
  text-align: center;
  font-size: 20px;
  font-weight: 400;
+}
+
+.card__content a{
+    text-align: center;
+    text-transform: uppercase;
+    width: 150px;
+   color: #fff;
+   background-color: rgb(15, 135, 186);
+   border-radius: 20px;
+   padding: 1rem;
+   
 }
 
 .title__card_projeto{
@@ -363,6 +378,14 @@ gap: 9rem;
         outline: 1px solid red;
         */
     }
+
+    
+.card__content p{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+   }
     
     
        
