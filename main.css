@@ -161,14 +161,13 @@ gap: 9rem;
 
 .card__projetos{
     width: 100%;
-    padding: 25px;
+    padding: 2rem;
     display: flex;
     flex-wrap: wrap;
    justify-content: space-around;
    gap: 5rem;
-/*
+
    outline: 1px solid red;
-*/ 
    
 }
 
@@ -179,15 +178,11 @@ gap: 9rem;
 
 .cards__image {
     width: 500px;
+ 
    padding: 10rem;
     background-color: rgb(27, 224, 224);
-    border-radius: 20px;
-   
-}
 
-.cards__image img {
    
-    border-radius: 20px; 
 }
 
 
