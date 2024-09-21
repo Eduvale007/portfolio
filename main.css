@@ -160,15 +160,19 @@ gap: 9rem;
 
 
 .card__projetos{
-    width: 100%;
-    padding: 2rem;
+    padding: 3rem;
     display: flex;
-    flex-wrap: wrap;
-   justify-content: space-around;
-   gap: 5rem;
-
-   outline: 1px solid red;
+    gap: 5rem;
    
+}
+
+
+img{
+    display: flex;
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
 }
 
 .card__projetos > article {
@@ -176,14 +180,7 @@ gap: 9rem;
     max-width: 500px;
 }
 
-.cards__image {
-    width: 500px;
- 
-   padding: 10rem;
-    background-color: rgb(27, 224, 224);
 
-   
-}
 
 
 
@@ -197,7 +194,7 @@ gap: 9rem;
     /*
     outline: 1px solid red;
     */
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .card__content p{
@@ -244,7 +241,6 @@ gap: 9rem;
     
 .main__sk{
     display: flex;
-    justify-content: center;
     /*
     outline: 1px solid red;
     */
@@ -254,15 +250,21 @@ gap: 9rem;
 }
 
 .card__projetos{
-    padding: 10px;
     display: flex;
     flex-direction: column;
    justify-content: space-between;
+   align-items: center;
     gap: 2rem;
     /*
    outline: 1px solid red;
    */
    
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
 }
 
 .card__projetos > article {
@@ -272,7 +274,8 @@ gap: 9rem;
 
 
 .card__content{
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     padding: 3rem;
     /*
     outline: 1px solid red;
@@ -314,13 +317,10 @@ gap: 9rem;
 }
 
 .card__projetos{
-    padding: 1rem;
     display: flex;
     flex-direction: column;
    gap: 1.5rem;
-   /*
    outline: 1px solid red;
-   */
    
 }
 
@@ -330,12 +330,20 @@ gap: 9rem;
 }
 
 .card__content{
-    width: 500px;
-/*
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem;
+    /*
     outline: 1px solid red;
     */
 }
 
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius:20px;
+}
 
    
     
